@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ansible Apache Deployment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #020617;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    .card {
+      background: #020617;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-left: 5px solid #22c55e;
+      border-radius: 8px;
+    }
+    h1, h2 {
+      color: #22c55e;
+    }
+    code {
+      background: #020617;
+      padding: 4px 8px;
+      border-radius: 4px;
+      color: #38bdf8;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #020617;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>🚀 Apache Deployed Using Ansible</h1>
+  <p>Automated | Idempotent | Production Ready</p>
+</header>
+
+<section>
+
+  <div class="card">
+    <h2>🔧 Apache Installation</h2>
+    <p>
+      Apache HTTP Server is installed using the
+      <code>ansible.builtin.apt</code> module.
+    </p>
+    <p>
+      The package manager ensures Apache is installed only if it is not already present.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>🔄 Package Cache Update</h2>
+    <p>
+      The APT package cache is updated before installation using:
+    </p>
+    <code>update_cache: yes</code>
+    <p>
+      This ensures the latest package metadata is available.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>♻️ Idempotency</h2>
+    <p>
+      Ansible maintains idempotency by checking the system state before making changes.
+    </p>
+    <ul>
+      <li>✔ Installs Apache only if missing</li>
+      <li>✔ Does nothing if Apache is already installed</li>
+      <li>✔ Restarts service only when notified</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>📦 Ansible Roles & Modules</h2>
+    <p>
+      Deployment is handled using Ansible roles for better structure and reusability.
+    </p>
+    <p>
+      Core modules used:
+    </p>
+    <ul>
+      <li><code>apt</code> – Package installation</li>
+      <li><code>service</code> – Service management</li>
+      <li><code>template</code> – HTML deployment</li>
+      <li><code>handler</code> – Conditional service restart</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🌐 Server Information</h2>
+    <p><b>Hostname:</b> {{ inventory_hostname }}</p>
+    <p><b>Deployment Date:</b> {{ ansible_date_time.date }}</p>
+  </div>
+
+</section>
+
+<footer>
+  <p>Deployed by Preeti | Powered by Ansible & Apache</p>
+</footer>
+
+</body>
+</html>
