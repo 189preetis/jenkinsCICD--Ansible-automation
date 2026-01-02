@@ -1,4 +1,4 @@
-server_4 ansible_host=13.201.82.43
+server_4 ansible_host=3.109.122.210
 
 [all:vars]
 ansible_user=ubuntu
