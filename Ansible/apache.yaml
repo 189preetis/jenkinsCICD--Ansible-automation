@@ -1,7 +1,7 @@
 ---
 
 - name: Install and deploy Apache website
-  hosts: all
+  hosts: web
   become: true
 
   tasks:
