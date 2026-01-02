@@ -4,3 +4,6 @@
 *.tfstate.backup
 .crash.log
 .terraform.lock.hcl
+
+ansible-key
+ansible-key.pub
