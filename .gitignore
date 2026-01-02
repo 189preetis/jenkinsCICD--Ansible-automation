@@ -5,5 +5,12 @@
 .crash.log
 .terraform.lock.hcl
 
+<<<<<<< HEAD
 ansible-key
 ansible-key.pub
+=======
+
+anisble-key
+ansible-key.pub
+Ansible/hosts
+>>>>>>> 5fdbe2f (commit)
