@@ -16,3 +16,20 @@ Ansible uses IP to configure server
 Application deployed
 
 
+Automated installation and configuration of Apache HTTP Server on AWS EC2 using Ansible
+
+Implemented idempotent playbooks to ensure consistent and repeatable deployments
+
+Used Ansible handlers to restart Apache services only when configuration changes occurred
+
+Deployed a static HTML website using Ansible modules such as apt, copy, and service
+
+Managed inventory and host groups for environment-based deployments
+
+Verified service availability using systemctl and curl
+
+Configured AWS Security Groups to allow HTTP (port 80) access securely
+
+Followed Infrastructure as Code (IaC) principles for scalable server provisioning
+
+
