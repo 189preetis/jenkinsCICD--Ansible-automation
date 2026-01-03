@@ -1,4 +1,7 @@
-# jenkinsCICD--Ansible-automation
+🚀 CI/CD Pipeline for Apache Web Server & Static Website Deployment on AWS
+📌 Project Overview
+
+This project demonstrates an end-to-end DevOps CI/CD pipeline that provisions infrastructure and deploys a static website on an Apache Web Server using Jenkins, Terraform, and Ansible on AWS
 push code to GitHub, Jenkins triggers the pipeline. Terraform provisions a new EC2 instance on AWS. Once the instance is ready, Ansible connects to it via SSH and installs Apache, deploys the application, and performs validation.
 Integrated GitHub with Jenkins using SSH-based authentication. Jenkins stores the private key securely in credentials, while the public key is registered with GitHub, enabling secure and automated repository access.
 
